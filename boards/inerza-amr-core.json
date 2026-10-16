@@ -1,0 +1,24 @@
+{
+  "notes": "ESP32-S3 N16R8: 16 MB de flash QIO y 8 MB de PSRAM OPI. Se programa por el USB nativo (USB-Serial/JTAG) o por el USB-UART CP2102; las dos usan «UART0 / Hardware CDC». Serial sale por el CP2102: activa «USB CDC On Boot» si quieres el monitor serie por el USB nativo.",
+  "docs": "",
+  "recommended": ["USBMode", "CDCOnBoot", "UploadMode", "PSRAM", "FlashSize", "FlashMode", "PartitionScheme", "CPUFreq", "UploadSpeed"],
+  "options": {
+    "USBMode": "hwcdc",
+    "CDCOnBoot": "default",
+    "UploadMode": "default",
+    "FlashSize": "16M",
+    "FlashMode": "qio",
+    "PartitionScheme": "app3M_fat9M_16MB",
+    "PSRAM": "opi",
+    "CPUFreq": "240",
+    "UploadSpeed": "921600"
+  },
+  "build": {
+    "flags": [],
+    "defines": { "INERZA_AMR_CORE": "1" },
+    "warnings": "default",
+    "optimize_for_debug": false
+  },
+  "upload": { "verify": false },
+  "monitor": { "baud": 115200 }
+}
