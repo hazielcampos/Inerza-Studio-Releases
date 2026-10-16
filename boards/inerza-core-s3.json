@@ -1,0 +1,21 @@
+{
+  "notes": "Valores provisionales hasta tener el hardware definitivo. Serial va por el USB nativo (CDC al arrancar).",
+  "docs": "",
+  "recommended": ["USBMode", "CDCOnBoot", "PSRAM", "FlashSize", "PartitionScheme", "CPUFreq", "UploadSpeed"],
+  "options": {
+    "USBMode": "hwcdc",
+    "CDCOnBoot": "cdc",
+    "FlashSize": "8M",
+    "PartitionScheme": "default_8MB",
+    "PSRAM": "opi",
+    "UploadSpeed": "921600"
+  },
+  "build": {
+    "flags": [],
+    "defines": { "INERZA_CORE_S3": "1" },
+    "warnings": "default",
+    "optimize_for_debug": false
+  },
+  "upload": { "verify": false },
+  "monitor": { "baud": 115200 }
+}
