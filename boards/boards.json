@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "boards": [
+    {
+      "id": "inerza-core-s3",
+      "name": "Inerza Core S3",
+      "description": "Placa principal Inerza · Wi-Fi + BLE 5 · USB nativo",
+      "chip": "ESP32-S3",
+      "family": "inerza",
+      "fqbn": "esp32:esp32:esp32s3",
+      "config": "inerza-core-s3.json"
+    },
+    {
+      "id": "inerza-mini-c3",
+      "name": "Inerza Mini C3",
+      "description": "Formato compacto · RISC-V · USB nativo",
+      "chip": "ESP32-C3",
+      "family": "inerza",
+      "fqbn": "esp32:esp32:esp32c3",
+      "config": "inerza-mini-c3.json"
+    },
+    {
+      "id": "esp32-devkit",
+      "name": "ESP32 Dev Module",
+      "description": "Genérica ESP32-WROOM / DevKitC",
+      "chip": "ESP32",
+      "family": "espressif",
+      "fqbn": "esp32:esp32:esp32"
+    },
+    {
+      "id": "esp32-s3",
+      "name": "ESP32-S3 Dev Module",
+      "description": "Dual core · USB nativo",
+      "chip": "ESP32-S3",
+      "family": "espressif",
+      "fqbn": "esp32:esp32:esp32s3"
+    },
+    {
+      "id": "esp32-c3",
+      "name": "ESP32-C3 Dev Module",
+      "description": "RISC-V · bajo consumo",
+      "chip": "ESP32-C3",
+      "family": "espressif",
+      "fqbn": "esp32:esp32:esp32c3"
+    },
+    {
+      "id": "esp32-c6",
+      "name": "ESP32-C6 Dev Module",
+      "description": "Wi-Fi 6 · Thread / Zigbee",
+      "chip": "ESP32-C6",
+      "family": "espressif",
+      "fqbn": "esp32:esp32:esp32c6"
+    },
+    {
+      "id": "esp32-s2",
+      "name": "ESP32-S2 Dev Module",
+      "description": "Single core · USB OTG",
+      "chip": "ESP32-S2",
+      "family": "espressif",
+      "fqbn": "esp32:esp32:esp32s2"
+    }
+  ]
+}
