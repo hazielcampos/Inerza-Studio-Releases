@@ -74,11 +74,3 @@ bool InerzaOTAClass::updating() const {
 void InerzaOTAClass::onStart(void (*callback)()) {
   s_onStart = callback;
 }
-
-// El core del ESP32 llama a initVariant() antes de setup(): así el OTA arranca solo cuando
-// Inerza Studio ha añadido la configuración, sin cambiar el código del proyecto.
-extern "C" void initVariant() {
-  if (&inerzaOTAConfig != nullptr) {
-    InerzaOTA.begin(inerzaOTAConfig);
-  }
-}
