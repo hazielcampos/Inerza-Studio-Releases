@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "libraries": [
+    {
+      "name": "InerzaOTA",
+      "version": "1.0.0",
+      "description": "Actualizar el programa por Wi-Fi (OTA). Inerza Studio la añade sola al activar el OTA.",
+      "files": ["library.properties", "src/InerzaOTA.h", "src/InerzaOTA.cpp", "examples/OTA_manual/OTA_manual.ino"]
+    }
+  ]
+}
